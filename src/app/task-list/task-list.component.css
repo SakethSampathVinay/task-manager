@@ -1,0 +1,52 @@
+.no-tasks {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.task-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.priority-badge {
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.status {
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.complete-btn {
+  align-self: flex-start;
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.complete-btn:hover {
+  background-color: #218838;
+}

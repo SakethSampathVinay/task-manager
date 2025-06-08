@@ -1,0 +1,17 @@
+<div class="task-form">
+  <h2>Add Task</h2>
+  <input type="text" placeholder="Task Name" [(ngModel)]="taskName" />
+  <select [(ngModel)]="taskPriority">
+    <option value="High">High</option>
+    <option value="Medium">Medium</option>
+    <option value="Low">Low</option>
+  </select>
+  <button (click)="addTask()">Add Task</button>
+</div>
+
+<hr />
+
+<app-task-list
+  [tasks]="tasks"
+  (taskCompleted)="markAsCompleted($event)"
+></app-task-list>
